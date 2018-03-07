@@ -1,0 +1,15 @@
+import(Rcpp)
+useDynLib(ecp, .registration=True)
+
+importFrom("stats", "dist")
+importFrom("utils", "tail")
+
+export("e.agglo")
+export("e.divisive")
+export("getBetween")
+export("getWithin")
+export("e.cp3o")
+export("e.cp3o_delta")
+export("ks.cp3o")
+export("ks.cp3o_delta")
+
